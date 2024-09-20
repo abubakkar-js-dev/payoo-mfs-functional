@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo-MFS-Functional</title>
+    <!-- link of tailwind and daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center ">
+      <div class="mockup-phone border-primary">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo overflow-y-scroll phone-3">
+            <!-- account balance section -->
+            <div class="stats shadow">
+              <div class="stat">
+                <div class="stat-title">Available Balance</div>
+                <div id="current-balance" class="stat-value">9400</div>
+                
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- fatures section  -->
+             <div class="space-x-2">
+              <div class="btn btn-lg">Add Money</div>
+              <div class="btn btn-lg">Cash Out</div>
+             </div>
+            <!-- fatures section end -->
+             <div class="divider"></div>
+             <!-- Add Money section  -->
+             <div class="card bg-base-100 w-10/12 max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input id="input-add-money" type="text" placeholder="Amount" class="input input-bordered" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input  id="input-add-money-pin" type="password" placeholder="pin" class="input input-bordered" required />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="btn-add-money"  class="btn btn-primary">Add Money</button>
+                </div>
+              </form>
+            </div>
+             <!-- Add Money section end -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/utilities.js"></script>
+    <script src="./js/addMoney.js"></script>
+    
+  </body>
+</html>
